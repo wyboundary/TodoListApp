@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22000" systemVersion="22A000" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="NO" userDefinedModelVersionIdentifier="">
+    <entity name="CDTodo" representedClassName="CDTodo" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="String"/>
+        <attribute name="title" optional="NO" attributeType="String" defaultValueString=""/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="isCompleted" optional="NO" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="priority" optional="NO" attributeType="Integer 16" defaultValueString="1" usesScalarValueType="YES"/>
+        <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="categoryId" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="CDCategory" representedClassName="CDCategory" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="String"/>
+        <attribute name="name" optional="NO" attributeType="String" defaultValueString=""/>
+        <attribute name="colorHex" optional="NO" attributeType="String" defaultValueString="#999999"/>
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+</model>
